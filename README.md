@@ -19,3 +19,5 @@ Proffy é uma plataforma de estudos online e foi desenvolvido para conectar alun
 
 ## 🖼️ Prévia
 
+![](https://github.com/gabriela-ogoncalves/nlw2-proffy/blob/master/imagensDoProjeto/01.png)
+![](https://github.com/gabriela-ogoncalves/nlw2-proffy/blob/master/imagensDoProjeto/02.png)
