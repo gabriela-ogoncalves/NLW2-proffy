@@ -9,6 +9,7 @@ O projeto Proffy foi desenvolvido durante a [*Next Level Week #2*](https://nextl
 - HTML
 - CSS
 - JavaScript
+- sqlite
 
 
 ## 🎨 O Projeto

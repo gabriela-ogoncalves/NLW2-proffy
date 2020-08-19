@@ -11,7 +11,7 @@ async function pageStudy(req, res) {
     if (!filters.length) {
         try {
             const db = await Database;
-            const allProffys = await db.all(`
+            const proffys = await db.all(`
             SELECT classes.*, proffys.*, class_schedule.*
             FROM proffys
             JOIN classes ON (classes.proffy_id = proffys.id)
@@ -19,8 +19,8 @@ async function pageStudy(req, res) {
             WHERE classes.proffy_id = proffys.id 
                 AND class_schedule.class_id = classes.id
         `)
-            console.log(allProffys)
-            // return res.render("/study.html")
+            console.log(proffys)
+            // return res.render("/study.html", { proffys, subjects, weekdays })
 
         } catch (error) {
             console.log(error)

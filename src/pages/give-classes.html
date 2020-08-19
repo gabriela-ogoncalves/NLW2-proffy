@@ -109,6 +109,10 @@
                             <label for="time_to">Até</label>
                             <input type="time" name="time_to[]" required>
                         </div>
+
+                        <div class="delete">
+                            <img src="/images/icons/trash.svg" alt="Excluir campos" onclick="deleteFields()">
+                        </div>
                     </div>
                 </fieldset>
             </form>
@@ -123,3 +127,14 @@
     </div>
 </body>
 </html>
+
+<script type="text/javascript">
+    function deleteFields() {
+        if(confirm("Tem certeza que deseja excluir?")) {
+            const fields = document.getElementById("teste");
+            fields.remove();
+        } else {
+            console.log('nada acontece')
+        }
+    }
+</script>

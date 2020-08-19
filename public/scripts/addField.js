@@ -9,14 +9,18 @@ function cloneField() {
     const newFieldContainer = document.querySelector('.schedule-item').cloneNode(true)
 
     // Pegar os campos. Que campos?
-    const fieldsInput = document.querySelectorAll('input');
+    const fieldsInput = newFieldContainer.querySelectorAll('input');
 
-    // Para cada campo, limpar.
+    // Para cada campo.
     fieldsInput.forEach((field) => {
-        // pegar o field do momento e limpar
-        field.value = "";
+        if (field.value === "") {
+            // se tiver vazio, obrigar usuário a preencher os dados
+            alert('Preencha os campos para adicionar novos horários')
+        } else {
+            // pegar o field do momento e limpar
+            field.value = "";
+            // Colocar na pagina
+            document.querySelector("#schedule-items").appendChild(newFieldContainer)
+        }
     })
-
-    // Colocar na pagina
-    document.querySelector("#schedule-items").appendChild(newFieldContainer)
 }

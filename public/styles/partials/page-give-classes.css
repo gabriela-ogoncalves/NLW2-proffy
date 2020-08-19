@@ -128,8 +128,18 @@
 
     .schedule-item {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr .1fr;
         column-gap: 1.6rem;
+    }
+
+    .schedule-item .delete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 3rem;
+
+        cursor: pointer;
     }
 
     #page-give-classes #schedule-items .select-block+.input-block,
